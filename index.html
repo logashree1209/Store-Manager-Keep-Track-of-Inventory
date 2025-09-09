@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Store Inventory Manager</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+ <h1 style="font-size: 56px;">Stock Inventory Manager</h1>
+
+  <div class="container">
+    <h1>Inventory Manager</h1>
+
+    <form id="item-form">
+      <input type="text" id="name" placeholder="Item Name" required />
+      <input type="number" id="quantity" placeholder="Quantity" required min="1" />
+      <input type="number" id="price" placeholder="Price ($)" required step="0.01" min="0" />
+      <button type="submit">Add Item</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price ($)</th>
+          <th>Total ($)</th>
+          <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>Fenugreek</td>
+            <td>2</td>
+            <td>80</td>
+            <td>160</td>
+            <td>Pending</td>
+        </tr>
+
+        <tr>
+            <td>Cinnamon</td>
+            <td>3</td>
+            <td>100</td>
+            <td>300</td>
+            <td>Sale</td>
+        </tr>
+
+        <tr>
+            <td>Clove</td>
+            <td>2</td>
+            <td>60</td>
+            <td>120</td>
+            <td>Pending</td>
+        </tr>
+
+        <tr>
+            <td>Raisin</td>
+            <td>3</td>
+            <td>200</td>
+            <td>600</td>
+            <td>Sale</td>
+        </tr>
+
+        <tr>
+            <td>Elachi</td>
+            <td>6</td>
+            <td>50</td>
+            <td>300</td>
+            <td>Pending</td>
+        </tr>
+
+        <tr>
+            <td>Cardamon</td>
+            <td>3</td>
+            <td>150</td>
+            <td>450</td>
+            <td>Sale</td>
+        </tr>
+
+      </thead>
+      <tbody id="inventory-body">
+        <!-- Inventory items will be injected here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
